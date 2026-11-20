@@ -1,23 +1,40 @@
 # Hi, I'm MaxWell 👋
 
-**EN:** Data Scientist. I build production forecasting and analytics solutions: demand forecasting with gradient boosting, leakage-safe validation and BI dashboards. Below are production projects adapted for public release on synthetic data, and earlier study projects.
+### Data Scientist · AI Engineer · LLM agents
 
-**RU:** Data Scientist. Делаю production-решения для прогнозирования и аналитики: прогноз спроса на градиентном бустинге, честная валидация без утечек, BI-дашборды. Ниже — рабочие проекты, адаптированные для публикации на синтетических данных, и учебные проекты.
+I build **LLM agents that business people can trust with numbers**: they understand questions in natural language, call the right analytical tools, and code checks every figure before the user sees it. I come from data science (production forecasting and analytics), so I treat an agent like any other model: it ships with a test suite, an evaluation set and honest metrics.
 
-## Stack / Стек
+**What I work on**
 
-Python · pandas · NumPy · LightGBM · CatBoost · Optuna · statsmodels · SciPy · matplotlib · seaborn · Jupyter · pytest · GitHub Actions · SQL · DAX
+- 🤖 **Agent design.** Tool-calling agents where *code owns the numbers and the model owns the narrative*: deterministic NLU before the LLM, argument override, fact-only summaries, and verification of every number, unit and sign in the answer.
+- 🧪 **LLM evaluation.** Eval sets built from real user questions and reference answers, with strict automated checks: right tool, right arguments, every number. Plus fast tests that need no LLM, so every change can be checked in CI.
+- 🔒 **Local and private LLMs.** Open models (Qwen via Ollama) running on-premise. Only aggregated facts reach the model, never raw data. The agents are model-agnostic and scale from a laptop to a GPU server.
+- 📈 **Machine learning in production.** Demand forecasting with gradient-boosting ensembles, leakage-safe backtesting, out-of-time evaluation.
+- 🛠️ **AI-assisted engineering.** I build and refactor with coding agents (Claude Code), using planning, sub-agents and test-first workflows.
 
-## Production projects / Рабочие проекты
+## Featured projects
 
-| Project | EN | RU |
-|---|---|---|
-| [sku-demand-forecasting](https://github.com/MaxWell-com/sku-demand-forecasting) | Monthly demand forecast for 600 SKUs: nowcast + LightGBM/CatBoost ensemble, leakage-safe rolling-origin backtest, out-of-time WAPE 24.9% vs 31.9% baseline | Прогноз спроса по 600 SKU на 4 месяца: nowcast + ансамбль LightGBM/CatBoost, бэктест без утечек, WAPE вне выборки 24.9% против 31.9% у бейзлайна |
+| Project | What it is |
+|---|---|
+| 🤖 [**retail-sales-ai-analyst**](https://github.com/MaxWell-com/retail-sales-ai-analyst) | LLM agent that answers Russian-language business questions over ~24M rows of retail sell-out data. 13 analytical tools including LMDI factor analysis, distribution, pricing, assortment and forecasting. Russian NLU with morphology, number verification layer, 362 tests without an LLM, 39-question strict eval. FastAPI · DuckDB · Ollama |
+| 📈 [**sku-demand-forecasting**](https://github.com/MaxWell-com/sku-demand-forecasting) | Monthly demand forecast for 600 SKUs: nowcasting, LightGBM/CatBoost ensemble, leakage-safe rolling-origin backtest. Out-of-time WAPE 24.9% vs 31.9% for the best baseline |
 
-## Study projects / Учебные проекты
+All production projects are published on synthetic data that reproduces the statistical properties and data defects of the original. The code, methods and tests are the real ones.
 
-| Project | EN | RU |
-|---|---|---|
-| [ecommerce-rfm-segmentation](https://github.com/MaxWell-com/ecommerce-rfm-segmentation) | Customer RFM segmentation for an online shop, DAU/MAU, statistical hypothesis testing | RFM-сегментация клиентов интернет-магазина, DAU/MAU, статистические тесты |
-| [credit-scoring-risk-analysis](https://github.com/MaxWell-com/credit-scoring-risk-analysis) | Bank borrower credit-risk analysis | Анализ кредитных рисков заёмщиков банка |
-| [food-delivery-orders-eda](https://github.com/MaxWell-com/food-delivery-orders-eda) | Food-delivery orders exploratory data analysis | EDA заказов службы доставки еды |
+## Stack
+
+**LLM & agents:** tool calling · Ollama · Qwen · prompt design · eval harnesses · output verification · Claude Code
+**ML & data:** Python · pandas · NumPy · LightGBM · CatBoost · Optuna · statsmodels · SQL · DuckDB · DAX / SSAS
+**Engineering:** FastAPI · Docker · pytest · GitHub Actions · vanilla JS
+
+## Study projects
+
+| Project | Topic |
+|---|---|
+| [ecommerce-rfm-segmentation](https://github.com/MaxWell-com/ecommerce-rfm-segmentation) | Customer RFM segmentation, DAU/MAU, statistical hypothesis testing |
+| [credit-scoring-risk-analysis](https://github.com/MaxWell-com/credit-scoring-risk-analysis) | Bank borrower credit-risk analysis |
+| [food-delivery-orders-eda](https://github.com/MaxWell-com/food-delivery-orders-eda) | Food-delivery orders exploratory data analysis |
+
+---
+
+**RU:** Data Scientist и AI-инженер. Проектирую LLM-агентов, которым бизнес может доверить цифры. Агент понимает вопрос на естественном языке и вызывает аналитические инструменты, а каждое число в ответе проверяет код. Строю eval-наборы и тесты для агентов, работаю с локальными LLM (Ollama, Qwen) без передачи данных наружу. Опыт production-ML: прогноз спроса на градиентном бустинге с честной валидацией.
