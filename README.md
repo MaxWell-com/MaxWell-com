@@ -18,6 +18,7 @@ I build **LLM agents that business people can trust with numbers**: they underst
 |---|---|
 | 🤖 [**retail-sales-ai-analyst**](https://github.com/MaxWell-com/retail-sales-ai-analyst) | LLM agent that answers Russian-language business questions over ~24M rows of retail sell-out data. 13 analytical tools including LMDI factor analysis, distribution, pricing, assortment and forecasting. Russian NLU with morphology, number verification layer, 362 tests without an LLM, 39-question strict eval. FastAPI · DuckDB · Ollama |
 | 📈 [**sku-demand-forecasting**](https://github.com/MaxWell-com/sku-demand-forecasting) | Monthly demand forecast for 600 SKUs: nowcasting, LightGBM/CatBoost ensemble, leakage-safe rolling-origin backtest. Out-of-time WAPE 24.9% vs 31.9% for the best baseline |
+| 📊 [**sales-performance-dashboard**](https://github.com/MaxWell-com/sales-performance-dashboard) | One-page sales cockpit for a manufacturer: sales vs prior year, plan vs actual, unfulfilled demand, stock cover, auto-generated executive summary, rule-based client agent, 16-dimension associative filtering over an in-memory snapshot. Node.js · Express · OLAP (DAX/XMLA) |
 
 All production projects are published on synthetic data that reproduces the statistical properties and data defects of the original. The code, methods and tests are the real ones.
 
@@ -25,7 +26,7 @@ All production projects are published on synthetic data that reproduces the stat
 
 **LLM & agents:** tool calling · Ollama · Qwen · prompt design · eval harnesses · output verification · Claude Code
 **ML & data:** Python · pandas · NumPy · LightGBM · CatBoost · Optuna · statsmodels · SQL · DuckDB · DAX / SSAS
-**Engineering:** FastAPI · Docker · pytest · GitHub Actions · vanilla JS
+**Engineering & BI:** FastAPI · Node.js / Express · Docker · pytest · GitHub Actions · vanilla JS dashboards
 
 ## Study projects
 
